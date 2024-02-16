@@ -38,7 +38,7 @@ def saveData(moves, positions):
  positions = np.array(positions).reshape(-1,1)
  movesAndPositions = np.concatenate((moves, positions), axis = 1)
  nextIdx = findNextIdx()
- np.save(f"data/movesAndPositions{nextIdx}.npy", movesAndPositions)
+ np.save(f"data/RawData/movesAndPositions{nextIdx}.npy", movesAndPositions)
  print("Saved successfully")
 
 
@@ -76,5 +76,4 @@ def mineGames(numGames : int,MAX_MOVES = 500):
 
 
 
-
-mineGames(20)
+mineGames(1)
