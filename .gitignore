@@ -1,6 +1,6 @@
 
 stockfish-ubuntu-x86-64-modern
-data
+
 test_multiprocessing.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
