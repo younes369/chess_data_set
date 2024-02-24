@@ -6,12 +6,14 @@ import numpy as np
 import os
 import glob
 import time
+from dotenv import load_dotenv
 
+load_dotenv()
 
-from multiprocessing import Pool
+stockfishPath = os.getenv("STOCK_FISH_PATH")
+RawDataPath = os.getenv("RAW_DATA_PATH")
 
-
-stockfish = Stockfish(path=r"/home/youneszied/programming/chess_data_set/stockfish-ubuntu-x86-64-modern/stockfish/stockfish-ubuntu-x86-64-modern")
+stockfish = Stockfish(path=stockfishPath)
 
 
 #helper functions:
@@ -22,7 +24,7 @@ def checkEndCondition(board):
 
 #save
 def findNextIdx():
- files = (glob.glob(r"/home/youneszied/programming/chess_data_set/data/*.npy"))
+ files = (glob.glob(r"RawDataPath/*.npy"))
  if (len(files) == 0):
   return 1 #if no files, return 1
  highestIdx = 0
