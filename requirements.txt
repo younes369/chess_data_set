@@ -1,0 +1,10 @@
+chess==1.10.0
+cloudpickle==1.6.0
+future==0.18.3
+gym==0.17.3
+gym-chess==0.1.1
+numpy==1.26.4
+pyglet==1.5.0
+python-chess==0.31.4
+scipy==1.12.0
+stockfish==3.28.0
