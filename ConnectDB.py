@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from bson import BSON
 
 
-from helperFunctions import findNextIdx, saveData, loading_status
+from sharedFunctions import findNextIdx, saveData, loading_status
 
 load_dotenv()
 uri = os.getenv("DB_URI")

@@ -7,7 +7,7 @@ import os
 import glob
 import time
 from dotenv import load_dotenv
-from helperFunctions import findNextIdx, saveData, checkEndCondition
+from sharedFunctions import findNextIdx, saveData, checkEndCondition
 load_dotenv()
 
 stockfishPath = os.getenv("STOCK_FISH_PATH")
